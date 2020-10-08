@@ -1,0 +1,287 @@
+@media(min-width:100px) and (max-width:500px){
+  .first-box{
+    flex-wrap: wrap;
+  }
+  .main_content{
+    width: 100vw;
+  }
+  .btn-refer{
+    float: right;
+    background: linear-gradient(83deg, rgba(49,126,244,1) 0%, rgba(26,171,244,1) 100%);
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-right: 2%;
+    width: 120px;
+
+  }
+  .refer-btn{
+    background: linear-gradient(83deg, rgba(49,126,244,1) 0%, rgba(26,171,244,1) 100%);
+    outline: none;
+    border: none;
+    color: white;
+  }
+  .sub-head{
+    margin-left: 1%;
+    margin-top: 10%;
+  }
+  .card1{
+    width: 100%;
+    // height: 60vh;
+    flex-wrap: wrap;
+  }
+  .card2{
+    margin-top: 10%;
+    width: 100%;
+  }
+  .boxes {
+    margin: 3%;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    .value {
+        margin: 0;
+        padding: 0;
+        h3 {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+} 
+.card{
+  width: 75%;
+  margin-bottom: 5%;
+}
+.overall{
+  text-align: center;
+}
+.right-sec{
+  width: 100%;
+}
+}
+@media (min-width:500px){
+  .btn-refer{
+    cursor: pointer;
+    margin-top: 1%;
+    margin-right: 5%;
+    margin-left: 81%;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(83deg, rgba(49,126,244,1) 0%, rgba(26,171,244,1) 100%);
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 1%;
+  }
+  .refer-btn{
+    background: linear-gradient(83deg, rgba(49,126,244,1) 0%, rgba(26,171,244,1) 100%);
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 1%;
+    width: 120px;
+  }
+  .refer-icon{
+    width: 20px;
+    height: 20px;
+  }
+  .sub-head{
+    margin-left: 1%;
+    margin-top: 1.5%;
+  }
+  .card1{
+    width: 60%;
+    height: 60vh;
+  }
+  .card2{
+    margin-left: 10%;
+    width: 25%;
+  }
+  .boxes {
+    margin: 3%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    .value {
+        margin: 0;
+        padding: 0;
+        h3 {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+ 
+.card{
+  width: 15%;
+}
+.right-sec{
+  width: 50%;
+}
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+p {
+    font-family: Lato;
+  }
+  
+  .main_content {
+    width:100%; 
+    height: calc(100vh - 70px); 
+    background: #f6f7fb;
+
+  }
+
+.arrow-icon{
+  width: 50px;
+  height: 50px;
+}
+.first-box{
+  margin: 5%;
+  margin-top: 2%;
+  display: flex;
+  
+}
+.card1{
+
+ 
+  display: flex;
+  .left-sec{
+    width: 100%;
+    .left-sec-head{
+      text-align: center;
+      color: lightgray;
+    }
+    .left-sec-value{
+      text-align: center;
+    }
+  }
+  .right-sec{
+    background-color: #f6f7fb;
+    border-radius: 5px;
+ 
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+    .example-margin{
+     margin-top: 8%;
+     color: yellow;
+    }
+    .hashes{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+    .hashes1{
+      color: lightgray;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+    .mining{
+      margin-top: 15%;
+    }
+  }
+}
+
+
+.heading{
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+
+
+.name-card{
+  color: lightgray;
+  margin-top: 7%;
+}
+.card-head{
+  display: flex;
+  align-items: center;
+}
+.bit-img{
+  width: 20px;
+  height: 20px;
+  margin-right: 3%;
+}
+.value{
+  text-align: center;
+}
+.card-img{
+  width: 99%;
+}.value-sub{
+  display: flex;
+  justify-content: space-around;
+}
+.value-sub-head{
+  color: lightgray;
+  text-align: left;
+}
+.value-sub-val{
+  color: #3080f4;
+}
+.val-sub{
+  margin-left: 23%;
+}
+.chart{
+  height: 50vh;
+  width: 100%;
+}
+::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+  stroke:#3080f4;
+ 
+  
+}
+.mat-progress-bar {
+  height: 30px;
+}
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+.mat-progress-spinner{
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 50%;
+}
+.spinner-div{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spinner-value{
+  color: black;
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 2%;
+}

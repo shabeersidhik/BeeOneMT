@@ -1,0 +1,79 @@
+<div>
+    <app-header></app-header>
+    <mat-sidenav-container class="sidenav-container">
+      <mat-sidenav #leftSidenav mode="side" opened>
+        <app-left-menu></app-left-menu>
+      </mat-sidenav>
+      <mat-sidenav-content [@onMainContentChange]="onSideNavChange ? 'open': 'close'">
+        <div class="main_content">
+          <div class="btn-refer">
+            <button class="refer-btn">Refer a friend</button>
+            <img  class="refer-icon"src="assets/refer_frnd.png">
+          </div>
+          <div class="heading">
+            <img src="assets/Ellipse1.png">&nbsp;&nbsp;&nbsp;
+            <h3 class="sub-head"><b>PortFolio</b></h3>
+          </div>
+          <div class="first-box">
+            <mat-card  class="card1">
+              <div class="left-sec">
+                <p class="left-sec-head">Your portfolio value</p><br>
+                <h4 class="left-sec-value"><b>0.00BTC</b></h4>
+                <div class="chart" echarts [options]="linegraph_options">
+                </div>
+              </div>
+            <div class="right-sec">
+              <div class="spinner-div" >
+                <mat-progress-spinner class="example-margin"
+                  [color]="color" [mode]="mode"[value]="value">
+                </mat-progress-spinner>
+                <h1 class="spinner-value" >69%</h1>
+              </div>
+            <p class="mining"><b>CCRB Mining</b></p>
+            <p class="overall">Overall Competition</p>
+            <div class="hashes1"><p>Hashes Mined</p><p>CCRB Mined</p></div>
+            <div class="hashes"><h4><b>985k</b></h4><h4><b>$2.46</b></h4></div>
+          </div>
+          </mat-card>
+          <mat-card  class="card2">
+          <img class="card-img"src="assets/PrimePlus.png">
+            <div class="value">
+               <div class="value-sub"><p class="value-sub-head">Membership :</p><p class="value-sub-val">Prime Plus</p></div>
+               <div class="value-sub"><p class="value-sub-head">Trading Account :</p><p>266.7 CCRB</p></div>
+               <div class="value-sub"><p class="value-sub-head">Mining Balance :</p><p>266.7 CCRB</p></div>
+               <div class="value-sub"><p class="value-sub-head">Mining Pending :</p><p>266.7 CCRB</p></div>
+               <div class="value-sub"><p class="value-sub-head">Total:</p><p class="val-sub">266.7 CCRB</p></div>
+            </div>
+        </mat-card>
+      </div>
+          <div class="boxes">
+            <mat-card  class="card">
+              <div class="card-head"><img class="bit-img" src="assets/CCRB.png"><p class="name-card">Cyptocarbon(CCRB)</p></div>
+              <div class="value">
+                <h4><b>266.7CRB</b></h4>
+              </div>
+            </mat-card>
+            <mat-card  class="card">
+              <div class="card-head"><img class="bit-img" src="assets/bitcoin.png"><p class="name-card">Cyptocarbon(CCRB)</p></div>
+              <div class="value">
+                <h4><b>266.7CRB</b></h4>
+              </div>
+            </mat-card>
+            <mat-card  class="card">
+              <div class="card-head"><img class="bit-img" src="assets/ether.png"><p class="name-card">Cyptocarbon(CCRB)</p></div>
+              <div class="value">
+                <h4><b>266.7CRB</b></h4>
+              </div>
+            </mat-card>
+          <mat-card  class="card">
+            <div class="card-head"><img class="bit-img" src="assets/ether.png"><p class="name-card">Cyptocarbon(CCRB)</p></div>
+            <div class="value">
+              <h4><b>266.7CRB</b></h4>
+            </div>
+          </mat-card>
+          <img class="arrow-icon" src="assets/right_arrow.png">
+      </div>
+    </div>
+  </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

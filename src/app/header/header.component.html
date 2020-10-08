@@ -1,0 +1,16 @@
+<div fxFlex="row" fxLayoutAlign="center center" fxLayoutGap="10px" class="header">
+    <div class="nav-bar">
+        <img class="dashboard-icon" src="assets/bashboard.png">
+        <div class="nav-function">
+            <img class="notify-icon" src="assets/Notification.png">
+            <div class="menu-container">
+                <div class="menu-img"></div>
+            <button class="menu-btn" mat-button>Subash Manual</button>
+            <mat-icon class="menu-icon" [matMenuTriggerFor]="menu">keyboard_arrow_down</mat-icon>
+            </div>
+            <mat-menu #menu="matMenu" yPosition="below">
+              <button mat-menu-item>Logout</button>
+            </mat-menu>
+        </div>
+    </div>
+</div>

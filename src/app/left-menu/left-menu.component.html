@@ -1,0 +1,50 @@
+<div class="sidenav_container" (mouseenter)="onSinenavToggle()" (mouseleave)="onSinenavToggle()" [@onSideNavChange]="sideNavState ? 'open' : 'close'" >
+    <div fxLayout="column" fxLayoutGap="10px" style="height: 100%;">
+      <div class="nav-container">
+        <mat-nav-list class="icon-items">
+          <a mat-list-item class="nav-items-div" routerLink="/dashboard" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+            <div class="image-container">
+            <img class="icon-img" src="assets/home.png">&nbsp;&nbsp;
+          </div>
+            <span class="icon-text" [@animateText]="linkText ? 'show' : 'hide'">Dashboard</span>
+          </a>
+        </mat-nav-list>
+        <mat-nav-list class="icon-items">
+          <a mat-list-item class="nav-items-div">
+            <img class="icon-img" src="assets/Ewallet.png">&nbsp;&nbsp;
+            <span class="icon-text" [@animateText]="linkText ? 'show' : 'hide'">E-Wallets</span>
+          </a>
+        </mat-nav-list>
+        <mat-nav-list class="icon-items">
+          <a mat-list-item class="nav-items-div">
+            <img class="icon-img" src="assets/affiliates.png">&nbsp;&nbsp;
+            <span class="icon-text" [@animateText]="linkText ? 'show' : 'hide'">Affliliates</span>
+          </a>
+        </mat-nav-list>
+        <mat-nav-list class="icon-items">
+          <a mat-list-item class="nav-items-div">
+            <img class="icon-img" src="assets/event.png">&nbsp;&nbsp;
+            <span class="icon-text" [@animateText]="linkText ? 'show' : 'hide'">Events</span>
+          </a>
+        </mat-nav-list>
+        <mat-nav-list class="icon-items">
+          <a mat-list-item class="nav-items-div"> 
+            <img class="icon-img" src="assets/Payment.png">&nbsp;&nbsp;
+            <span class="icon-text" [@animateText]="linkText ? 'show' : 'hide'">Payments</span>
+          </a>
+        </mat-nav-list>
+        <mat-nav-list class="icon-items">
+          <a mat-list-item class="nav-items-div">
+            <img class="icon-img" src="assets/Manage_biz.png">&nbsp;&nbsp;
+            <span class="icon-text" [@animateText]="linkText ? 'show' : 'hide'">Manage my business</span>
+          </a>
+        </mat-nav-list>
+        <mat-nav-list class="icon-items">
+          <a mat-list-item class="nav-items-div">
+            <img class="icon-img" src="assets/settings.png">&nbsp;&nbsp;
+            <span class="icon-text" [@animateText]="linkText ? 'show' : 'hide'">Settings</span>
+          </a>
+        </mat-nav-list>
+      </div>
+    </div>
+</div>
